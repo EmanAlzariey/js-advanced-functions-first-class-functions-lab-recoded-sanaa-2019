@@ -65,7 +65,7 @@ function fareTripler(fare1) { //accepts one argument
 function selectDifferentDrivers(array, RD) {
 
        return RD(array);
-    
+
 }
 
 // test it
