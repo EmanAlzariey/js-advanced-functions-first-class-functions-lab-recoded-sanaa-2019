@@ -13,7 +13,7 @@ function returnFirstTwoDrivers(array) {
 //array = [1, 2, 3, 4, 5, 6];
 // returnFirstTwoDrivers(array)
 
-//console.log(returnFirstTwoDrivers()(array));
+//console.log(returnFirstTwoDrivers(array));
 
 //2-------last two drivers in the array
 function returnLastTwoDrivers(array) {
@@ -42,24 +42,21 @@ function createFareMultiplier(int) {
 // console.log(createFareMultiplier(4)(250));
 
 //5--------fare Doubler
-function fareDoubler(int1) { //accepts one argument
-    const x = function (fare1) {
-        return (createFareMultiplier(int1)(fare1)) * 2;
-    }
+function fareDoubler(fare1) { //accepts one argument
+    const x = createFareMultiplier(2);
 
-    return x;
+    return x(fare1);
 }
 
 //test it
-// console.log(fareDoubler(7)(6));
+// console.log(fareDoubler(6));
 
 //6---------fare tripler
-function fareTripler(int1) { //accepts one argument
-    const x = function (fare1) {
-        return (createFareMultiplier(int1)(fare1) * 3);
-    }
+function fareTripler(fare1) { //accepts one argument
+  const x = createFareMultiplier(3);
 
-    return x;
+  return x(fare1);
+
 }
 //test it
 // console.log(fareTripler(2)(30));
