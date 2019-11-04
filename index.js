@@ -59,26 +59,13 @@ function fareTripler(fare1) { //accepts one argument
 
 }
 //test it
-// console.log(fareTripler(2)(30));
+// console.log(fareTripler(2));
 
 //7--------select Different Drivers
 function selectDifferentDrivers(array, RD) {
 
-    // console.log(array);
-    // console.log(RD.toString());
-    // console.log(returnFirstTwoDrivers().toString());
-
-    if (RD.toString() === returnLastTwoDrivers().toString()) {
-        // console.log("last two");
-        // console.log(returnLastTwoDrivers()(array));
-        return returnLastTwoDrivers()(array)
-    }
-
-    if (RD.toString() === returnFirstTwoDrivers().toString()) {
-        // console.log("first two");
-        // console.log(returnFirstTwoDrivers()(array));
-        return returnFirstTwoDrivers()(array)
-    }
+       return RD(array);
+    
 }
 
 // test it
